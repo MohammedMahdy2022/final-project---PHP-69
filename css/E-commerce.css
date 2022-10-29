@@ -1,0 +1,231 @@
+/* Start Roots */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #e13ed7;
+    --header-bgcolor: #f3f3f3;
+    --header-bgcolor2: #060001;
+    --footer-bgcolor: #1d1d1d;
+    --main-color2: #505050;
+    --star: #c5c3c5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-title {
+    margin: 0 auto 80px;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition);
+}
+.main-title::before,
+.main-title::after {
+    content: "";
+    width: 510px;
+    height: 12px;
+    position: absolute;
+    border-bottom: 5px double var(--star);
+    top: 50%;
+    transform: translateY(-50%);
+}
+.main-title::before {
+    left: -512px;
+}
+.main-title::after {
+    right: -512px;
+}
+/* End Roots */
+/* Start Header  */
+.header ul li .nav-link:hover,
+.header ul li .nav-link.active{
+    color: var(--main-color);
+}
+.header .navbar {
+    background-color: var(--header-bgcolor);
+}
+.header .navbar-toggler {
+    color: black;
+    font-size: 25px;
+    border-color: black;
+}
+.header .navbar-toggler:focus {
+    box-shadow: none;
+}
+.header .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color);
+}
+/* End Header  */
+/* Start Form  */
+.form .search {
+    display: block;
+    margin-left : -100px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    border-left: 1px solid black;
+    margin-right: 150px;
+    
+}
+.form .form-control:focus {
+    box-shadow: none;
+}
+.form .form-control {
+    width: 500px;
+    padding-left: 50px;
+}
+/* End Form  */
+/* Start Head  */
+.head .navbar {
+    background-color: var(--header-bgcolor2);
+}
+.head .navbar ul li .nav-link:hover, .head .navbar ul li .nav-link.active {
+    color: var(--main-color);
+}
+.head .navbar .nav-link {
+    color: white;
+}
+.head .navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.head .navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.head .navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--main-color);
+}
+/* End Head  */
+/* Start Landing */
+.carousel .carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml,<svg width="21px" height="21px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="m9.55 11.4-3-2.9 3-3"/></g></svg>');
+}
+
+.carousel .carousel-control-next-icon {
+    background-image: url('data:image/svg+xml,<svg width="21px" height="21px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="m7.5 11.5 3-3-3.068-3"/></g></svg>');
+}
+    
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #000;
+}
+
+/* End Landing */
+/* Start Women  */
+.women h3 {
+    letter-spacing: 5px;
+    color: var(--main-color);
+}
+.women h2 {
+    color: var(--main-color2);
+}
+.women p {
+    width: 636px;
+}
+
+/* End Women  */
+/* Start Feature  */
+.feature {
+    color: var(--main-color2);
+}
+
+.feature ul li a {
+    text-decoration: none;
+}
+.feature .nav-link {
+    color: var(--main-color2);
+    font-size: 18px;
+
+} 
+.feature .nav-item .nav-link:hover, .feature .nav-item .nav-link.active {
+    border-bottom: 2px solid black;
+    color: var(--main-color);
+} 
+.feature p {
+    color: var(--main-color2);
+}
+.feature .star .filled {
+    color: var(--main-color);
+}
+.feature .star {
+    color: var(--star);
+}
+/* End Feature  */
+/* Start Trending  */
+.trending h3 {
+    color: var(--main-color2);
+}
+.trending .star .filled {
+    color: var(--main-color);
+}
+.trending .star {
+    color: var(--star);
+}
+/* End Trending  */
+/* Start Blog  */
+.blog h3 {
+    color: var(--main-color2);
+}
+.blog .card {
+    border: none;
+}
+.blog a {
+    text-decoration: none;
+    color: #353131;
+}
+.blog .border-dark {
+    color: #353131;
+}
+/* End Blog  */
+/* Start Shop  */
+.shop h3 {
+    color: var(--main-color2);
+}
+/* End Shop  */
+/* Start Footer  */
+.footer {
+    background-color: var(--footer-bgcolor);
+}
+.footer .form-control {
+    background-color: var(--footer-bgcolor);
+    width: 70%;
+}
+.footer .border-dark {
+    background-color: var(--main-color);
+}
+.footer .border-light {
+    background-color: var(--footer-bgcolor);
+}
+/* End Footer  */
+/* Start Last  */
+.last {
+    background-color: black;
+}
+/* End Last  */
